@@ -6,6 +6,16 @@ The format is based on [Keep a
 Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.0.2 - 2021-07-03
+
+### Changed
+
+- Published protobuf definitions from:
+    ```
+    tag: oss-v20.6.2
+    commit: bc31452e4f6d6e798890ccf2cc41d21ad700ecf3
+    ```
+
 ## 1.0.1 - 2021-07-03
 
 ### Changed
