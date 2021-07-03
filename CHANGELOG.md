@@ -6,6 +6,31 @@ The format is based on [Keep a
 Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 2.0.0 - 2021-07-03
+
+### Changed
+
+- Published protobuf definitions from:
+    ```
+    tag: oss-v21.6.0
+    commit: 1f713a407019b8f441aaa29110b57a7d4cd35c10
+    ```
+
+This tag presents new changes for the protobufs:
+
+- (breaking) the stream_identifier shared type's `streamName` field has been
+  renamed to `stream_name`
+- a new batch-append rpc has been added to the streams API
+- persistent subscriptions can be configured to subscribe to the magic `$all`
+  stream
+
+These stream-name casing change is the only breaking change. It presents a
+difference in how users of this library must integrate with the gpb-generated
+records, but it is not a noticeable difference in the over-the-wire encoding
+between the client and server. A consumer updating to the v2 of this library
+must update its usage of the gpb-generated records, but is compatible with
+EventStoreDB v20.6.0-v21.6.0
+
 ## 1.2.0 - 2021-07-03
 
 ### Changed
