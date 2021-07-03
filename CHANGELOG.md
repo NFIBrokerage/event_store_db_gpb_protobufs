@@ -10,7 +10,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 
 ### Changed
 
-- Published protobuf definitions from
+- Published protobuf definitions from:
     ```
     tag: v20.6.0
     commit: 7d8855961882b044f20c031773e729aa73734d67
@@ -21,3 +21,5 @@ Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 ### Added
 
 - Initial publish of protobuf files
+    - Note that these protobuf files were from the 21.6.0 release and do not
+      adhere to the versioning schema followed after v1.0.0 of this library
