@@ -7,6 +7,7 @@
   {exclude_files, ["include", "src/*.erl"]},
   {include_files, [
     "CHANGELOG.md",
+    "EventStore/LICENSE.md",
     "EventStore/src/Protos/Grpc",
     "src/event_store_db_gpb_protobufs.erl"
   ]},
