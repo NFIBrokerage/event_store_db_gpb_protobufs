@@ -1,10 +1,11 @@
 {application, event_store_db_gpb_protobufs, [
-  {description, "gpb generated protocol buffer definitions for EventStoreDB v20+"},
+  {description, "gpb generated protobuf definitions for EventStoreDB v20+"},
   {vsn, "0.1.0"},
   {registered, []},
   {applications, [kernel, stdlib]},
   {licenses, ["Apache-2.0"]},
-  {include_files, ["CHANGELOG.md"]},
+  {include_files, ["CHANGELOG.md", "EventStore/src/Protos/Grpc"]},
+  {exclude_files, ["include", "src/*.erl"]},
   {links, [
     {"GitHub", "https://github.com/NFIBrokerage/event_store_db_gpb_protobufs"}
   ]},
