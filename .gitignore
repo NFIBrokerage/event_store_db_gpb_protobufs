@@ -17,4 +17,5 @@ _build
 *.iml
 rebar3.crashdump
 src/*.erl
+!src/event_store_db_gpb_protobufs.erl
 include/*.hrl
