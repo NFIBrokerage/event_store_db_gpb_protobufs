@@ -21,3 +21,18 @@ EventStoreDB's gRPC interface.
 1. change the library version in `src/event_store_db_gpb_protobufs.app.src`
 1. run `rebar3 compile`
 1. publish the package `rebar3 hex publish`
+
+### Seeing diffs between EventStore versions
+
+The `CHANGELOG.md` contains a log of the commit hashes. You can compare the
+protobuf definitions between any two EventStore commit hashes `aaaaaaa` and
+`bbbbbbb` like so:
+
+```bash
+git clone git@github.com:EventStore/EventStore.git
+cd EventStore/
+git diff aaaaaaa..bbbbbbb src/Protos/Grpc/
+
+# for example:
+git diff bc30009b8397fc590cdb8d013f5b5d8bfc8acded..1f713a407019b8f441aaa29110b57a7d4cd35c10 src/Protos/Grpc/
+```
