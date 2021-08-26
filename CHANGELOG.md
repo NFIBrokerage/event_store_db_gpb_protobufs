@@ -6,6 +6,16 @@ The format is based on [Keep a
 Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [UNRELEASED]
+
+### Added
+
+- The Streams API ReadResp has been appended `stream_position` and
+  `all_stream_position` fields which describe the stream positions
+  and commit/prepare positions of the read event as well as the latest
+  known stream position and commit/prepare position in the stream being
+  read
+
 ## 2.0.0 - 2021-07-03
 
 ### Changed
