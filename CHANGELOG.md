@@ -6,15 +6,21 @@ The format is based on [Keep a
 Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [UNRELEASED]
+## 2.1.0 - 2021-11-04
 
 ### Added
 
-- The Streams API ReadResp has been appended `stream_position` and
-  `all_stream_position` fields which describe the stream positions
-  and commit/prepare positions of the read event as well as the latest
-  known stream position and commit/prepare position in the stream being
-  read
+- Published protobuf definitions from:
+    ```
+    tag: oss-v21.10.0
+    commit: 076363440415a834a5d282aed556438cdcc6d434
+    ```
+    - This update adds a ServerFeatures protobuf a client may use to determine
+      the available capabilities of the server with respect to new gRPC
+      interface features
+    - The `ReadReq` streams message has added an option to receive a trailing
+      `ReadResp` message with the first and last stream position in the stream
+      being read.
 
 ## 2.0.0 - 2021-07-03
 
