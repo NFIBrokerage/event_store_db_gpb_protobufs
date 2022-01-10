@@ -1,6 +1,6 @@
 {application,event_store_db_gpb_protobufs,
              [{description,"gpb generated protobuf definitions for EventStoreDB v20+"},
-              {vsn,"2.1.0"},
+              {vsn,"2.1.1"},
               {registered,[]},
               {applications,[kernel,stdlib]},
               {licenses,["Apache-2.0"]},
