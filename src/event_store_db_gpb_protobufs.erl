@@ -2,7 +2,7 @@
 -export([version/0, commit_hash/0]).
 
 version() ->
-  {21, 10, 5}.
+  {22, 10, 1}.
 
 commit_hash() ->
-  "c356d1f4a554010f30095fd088d2c72bc3c85b2a".
+  "0e8ffb887cd35dc3e9080b2cc4f079ac720d490f".
